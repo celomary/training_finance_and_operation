@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>number_sequence_module</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <DeployOnline>False</DeployOnline>
+    <ProjectGuid>{17f94acf-9e38-431a-8f75-ea46308bede3}</ProjectGuid>
+    <Name>FinanceOperations5</Name>
+    <RootNamespace>FinanceOperations5</RootNamespace>
+    <StartupObject>MoUserIdJob</StartupObject>
+    <StartupType>Class</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Base Enums\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Display Menu Items\" />
+    <Folder Include="EDT Enums\" />
+    <Folder Include="EDT Strings\" />
+    <Folder Include="Forms\" />
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Menus\" />
+    <Folder Include="Security Duties\" />
+    <Folder Include="Security Privileges\" />
+    <Folder Include="Security Roles\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\MoCustomFilter">
+      <SubType>Content</SubType>
+      <Name>MoCustomFilter</Name>
+      <Link>Classes\MoCustomFilter</Link>
+    </Content>
+    <Content Include="AxClass\MoUserId">
+      <SubType>Content</SubType>
+      <Name>MoUserId</Name>
+      <Link>Classes\MoUserId</Link>
+    </Content>
+    <Content Include="AxClass\MoUserIdJob">
+      <SubType>Content</SubType>
+      <Name>MoUserIdJob</Name>
+      <Link>Classes\MoUserIdJob</Link>
+    </Content>
+    <Content Include="AxEdt\MO_AVAILABILITYNAME">
+      <SubType>Content</SubType>
+      <Name>MO_AVAILABILITYNAME</Name>
+      <Link>EDT Strings\MO_AVAILABILITYNAME</Link>
+    </Content>
+    <Content Include="AxEdt\MO_DESCRIPTION">
+      <SubType>Content</SubType>
+      <Name>MO_DESCRIPTION</Name>
+      <Link>EDT Strings\MO_DESCRIPTION</Link>
+    </Content>
+    <Content Include="AxEdt\MO_JOBNAME">
+      <SubType>Content</SubType>
+      <Name>MO_JOBNAME</Name>
+      <Link>EDT Strings\MO_JOBNAME</Link>
+    </Content>
+    <Content Include="AxEdt\MO_USERID">
+      <SubType>Content</SubType>
+      <Name>MO_USERID</Name>
+      <Link>EDT Strings\MO_USERID</Link>
+    </Content>
+    <Content Include="AxEdt\MO_USERNAME">
+      <SubType>Content</SubType>
+      <Name>MO_USERNAME</Name>
+      <Link>EDT Strings\MO_USERNAME</Link>
+    </Content>
+    <Content Include="AxEnum\MO_AVAILABILTY_STATUS">
+      <SubType>Content</SubType>
+      <Name>MO_AVAILABILTY_STATUS</Name>
+      <Link>Base Enums\MO_AVAILABILTY_STATUS</Link>
+    </Content>
+    <Content Include="AxForm\MO_AVAILIBILITY_FORM">
+      <SubType>Content</SubType>
+      <Name>MO_AVAILIBILITY_FORM</Name>
+      <Link>Forms\MO_AVAILIBILITY_FORM</Link>
+    </Content>
+    <Content Include="AxForm\MO_JOBFORM">
+      <SubType>Content</SubType>
+      <Name>MO_JOBFORM</Name>
+      <Link>Forms\MO_JOBFORM</Link>
+    </Content>
+    <Content Include="AxForm\MO_USERFORM">
+      <SubType>Content</SubType>
+      <Name>MO_USERFORM</Name>
+      <Link>Forms\MO_USERFORM</Link>
+    </Content>
+    <Content Include="AxMenuExtension\AccountsReceivable.number_sequence_module">
+      <SubType>Content</SubType>
+      <Name>AccountsReceivable.number_sequence_module</Name>
+      <Link>Menu Extensions\AccountsReceivable.number_sequence_module</Link>
+    </Content>
+    <Content Include="AxMenuExtension\MainMenu.number_sequence_module">
+      <SubType>Content</SubType>
+      <Name>MainMenu.number_sequence_module</Name>
+      <Link>Menu Extensions\MainMenu.number_sequence_module</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\MO_AVAILABILITYMENUITEM">
+      <SubType>Content</SubType>
+      <Name>MO_AVAILABILITYMENUITEM</Name>
+      <Link>Display Menu Items\MO_AVAILABILITYMENUITEM</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\MO_JOBMENU">
+      <SubType>Content</SubType>
+      <Name>MO_JOBMENU</Name>
+      <Link>Display Menu Items\MO_JOBMENU</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\MO_USERMENU">
+      <SubType>Content</SubType>
+      <Name>MO_USERMENU</Name>
+      <Link>Display Menu Items\MO_USERMENU</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\UserMenuItem">
+      <SubType>Content</SubType>
+      <Name>UserMenuItem</Name>
+      <Link>Display Menu Items\UserMenuItem</Link>
+    </Content>
+    <Content Include="AxMenu\MenuUser">
+      <SubType>Content</SubType>
+      <Name>MenuUser</Name>
+      <Link>Menus\MenuUser</Link>
+    </Content>
+    <Content Include="AxSecurityDuty\UserMenuDuty">
+      <SubType>Content</SubType>
+      <Name>UserMenuDuty</Name>
+      <Link>Security Duties\UserMenuDuty</Link>
+    </Content>
+    <Content Include="AxSecurityPrivilege\UserMenuPrivilege">
+      <SubType>Content</SubType>
+      <Name>UserMenuPrivilege</Name>
+      <Link>Security Privileges\UserMenuPrivilege</Link>
+    </Content>
+    <Content Include="AxSecurityRole\UserMenuRole">
+      <SubType>Content</SubType>
+      <Name>UserMenuRole</Name>
+      <Link>Security Roles\UserMenuRole</Link>
+    </Content>
+    <Content Include="AxTable\MO_AVAILABILTY_TABLE">
+      <SubType>Content</SubType>
+      <Name>MO_AVAILABILTY_TABLE</Name>
+      <Link>Tables\MO_AVAILABILTY_TABLE</Link>
+    </Content>
+    <Content Include="AxTable\MO_JOBTABLE">
+      <SubType>Content</SubType>
+      <Name>MO_JOBTABLE</Name>
+      <Link>Tables\MO_JOBTABLE</Link>
+    </Content>
+    <Content Include="AxTable\MO_USERTABLE">
+      <SubType>Content</SubType>
+      <Name>MO_USERTABLE</Name>
+      <Link>Tables\MO_USERTABLE</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
